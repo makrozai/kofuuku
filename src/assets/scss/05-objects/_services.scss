@@ -1,0 +1,12 @@
+.o{
+  @media #{$medium-and-down} {
+    &-service{
+      .col:nth-child(2){
+        order:-1;
+      }
+      .left-align,.right-align{
+        text-align: center;
+      }
+    }
+  }  
+}

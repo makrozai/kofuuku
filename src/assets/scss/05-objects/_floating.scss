@@ -1,0 +1,23 @@
+.o{
+  &-floating{
+    max-width: 550px;
+    position: relative;
+    transform:translateY(-10em);
+    border-radius: 3px;
+    &--large{
+      max-width: 800px;
+    }
+    &--full{
+      max-width: 100%;
+    }
+    @media #{$medium-and-down}{
+      transform:translateY(0);
+      box-shadow: 0 0 0 0 transparent;
+
+      &.u-padding__large{
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  }
+}

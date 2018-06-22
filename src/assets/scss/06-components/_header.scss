@@ -1,0 +1,26 @@
+.c{
+  &-hero{
+    &__caption{
+      @media #{$small-and-down} {
+        text-align: center;
+        width: 90% !important;
+      }
+      h1{
+        font-weight: 300;
+        letter-spacing: 2px;
+        margin: 0;
+      }
+      h2{
+        font-weight: 300;
+        margin: 0;
+        @media #{$small-and-down} {
+          font-size: 1.5em;
+        }
+      }
+      p{
+        font-weight: 300;
+        margin: .5em 0 1em;
+      }
+    }
+  }
+}

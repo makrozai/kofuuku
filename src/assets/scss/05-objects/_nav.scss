@@ -1,0 +1,73 @@
+.o{
+  &-nav{
+    box-shadow: 0 0 0 0 transparent;
+    transition:all .3s;
+    a, .brand-logo{
+      transition:all .3s;
+    }
+    a.button-collapse{
+      transition:all .3s;
+      i{
+        transition:all .3s;
+      }
+    }
+    &__desktop a{
+      position: relative;
+      transition:all .3s;
+      &:after{
+        content: "";
+        width:0;
+        height: .2em;
+        background: $secondary-color;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform:translateX(-50%);
+        transition:all .3s;
+      }
+      &:hover{
+        background: transparent;
+        color: $secondary-color;
+        letter-spacing: 0;
+        &:after{
+          width: 100%;
+        }
+      }
+    }
+    &__admin.brand-logo{
+      font-size: 1.5rem;
+      padding: 0 1rem;
+      font-weight: 300;
+    }
+    &__main.brand-logo{
+      font-size: 2rem;
+      padding: 0 1rem;
+      font-weight: 300;
+    }
+    &.scrolling{
+      height: 64px;
+      line-height: 64px;
+      background: white;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+      .brand-logo,.o-nav__desktop a{
+        color:$primary-color;
+      }
+      a.button-collapse{
+        color:$primary-color;
+        height: 64px;
+        line-height: 64px;
+        > i{
+          line-height: 64px;
+        }
+      }
+      .o-nav__desktop a{
+        height: 64px;
+        line-height: 64px;
+
+        &:hover{
+          color: $secondary-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.c{
+  &-button{
+    box-shadow: 0 0 0 0 $secondary-color inset;
+    &:hover{
+      background: transparent;
+      box-shadow: 0 0 0 2px $secondary-color inset;
+      color: $secondary-color;
+    }
+    &__reverse{
+      background: transparent;
+      box-shadow: 0 0 0 2px $secondary-color inset;
+      color: $secondary-color;
+      &:hover{
+        background: $secondary-color;
+        box-shadow: 0 0 0 0 $secondary-color inset;
+        color: white;
+      }
+      &--grey{
+        background: transparent;
+        box-shadow: 0 0 0 2px color("grey", "lighten-1") inset;
+        color: color("grey", "lighten-1");
+        &:hover{
+          background: $secondary-color;
+          box-shadow: 0 0 0 0 $secondary-color inset;
+          color: white;
+        }
+      }
+    }
+    &__form{
+      display: block;
+      width: 100%;
+    }
+    &__circle{
+      background: $secondary-color;
+      width: 5rem;
+      height:5rem;
+      color: white;
+      margin: 0 auto;
+      border-radius: 50%;
+
+      i{
+        line-height: 5rem;
+        font-size: 3rem;
+      }
+    }
+  }
+}

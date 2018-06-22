@@ -1,0 +1,29 @@
+.o{
+  &-banner{
+    min-height: 30em;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    transition:all .3s;
+
+    &--small{
+      min-height: 20em;
+    }
+    &__title{
+      font-size: 4em;
+    }
+    &__subtitle{
+      font-size: 2em;
+      font-weight: 200;
+    }
+    &__description{
+      font-weight: 200;
+      letter-spacing: 1px;
+    }
+    @media #{$medium-and-down}{
+      min-height: auto;
+      padding: 7rem 1rem 2rem;
+    }
+  }
+}

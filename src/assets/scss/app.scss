@@ -1,0 +1,19 @@
+@import "materialize.scss";
+//components modify
+@import "03-generic/reset";
+@import "05-objects/parts_cards";
+@import "05-objects/banner";
+@import "05-objects/floating";
+@import "05-objects/teamcard";
+@import "05-objects/nav";
+@import "05-objects/services";
+@import "06-components/parts_cards";
+@import "06-components/cards_services";
+@import "06-components/section_title";
+@import "06-components/button";
+@import "06-components/header";
+@import "07-trumps/utilities";
+
+
+// Or selectively include components
+// @import

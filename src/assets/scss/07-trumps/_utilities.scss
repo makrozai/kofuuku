@@ -1,0 +1,143 @@
+.u{
+  &-no-margin{
+    //utilizar each
+    margin: 0;
+    &__bottom{
+      margin-bottom: 0;
+    }
+  }
+  &-margin{
+    //utilizar each
+    &__right{
+      &--small{
+        margin-right: 1rem;
+      }
+      &--medium{
+        margin-right: 2rem;
+      }
+      &--large{
+        margin-right: 4rem;
+      }
+    }
+    &__left{
+      &--small{
+        margin-left: 1rem;
+      }
+      &--medium{
+        margin-left: 2rem;
+      }
+      &--large{
+        margin-left: 4rem;
+      }
+    }
+    &__top{
+      &--small{
+        margin-top: 1rem;
+      }
+      &--medium{
+        margin-top: 2rem;
+      }
+      &--large{
+        margin-top: 4rem;
+      }
+    }
+    &__tb{
+      &--small{
+        margin: 1rem 0;
+      }
+      &--medium{
+        margin: 2rem 0;
+      }
+      &--large{
+        margin: 4rem 0;
+      }
+    }
+  }
+  &-padding{
+    //utilizar each
+    &__small{
+      padding: 1rem;
+    }
+    &__medium{
+      padding: 2rem;
+    }
+    &__large{
+      padding: 3rem;
+    }
+    &__top{
+      &--small{
+        padding-top: 1rem;
+      }
+      &--medium{
+        padding-top: 2rem;
+      }
+      &--large{
+        padding-top: 4rem;
+      }
+    }
+    &__tb{
+      &--small{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      &--medium{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+      }
+      &--large{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+    }
+    &__lr{
+      &--small{
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      &--medium{
+        padding-left: 2rem;
+        padding-right: 2rem;
+      }
+      &--large{
+        padding-left: 4rem;
+        padding-right: 4rem;
+      }
+    }
+  }
+  &-divider{
+    border-top: 1px solid lighten($off-black,25);
+  }
+  &-disabled{
+    background: lighten($off-black,30);
+    overflow-X:hidden;
+    &.col{
+      padding-bottom: 1rem;
+    }
+  }
+  //utilizar each para colors y backgrounds
+  &-gray{
+    background: #f4f4f4;
+  }
+  &-white{
+    background: white;
+  }
+  &-purple{
+    background: $primary-color;
+  }
+  &-green{
+    background: $secondary-color;
+  }
+  &-blue{
+    background: #3864a3;
+  }
+  &-red{
+    background: #dd4e42;
+  }
+  &-text--white{
+    color: white;
+  }
+  &-text--green{
+    color: $secondary-color;
+  }
+}
+

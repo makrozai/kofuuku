@@ -1,0 +1,12 @@
+html{
+  font-family: "Raleway", sans-serif;
+  @media #{$small-and-down} {
+    overflow-X: hidden; 
+  }
+}
+p{
+  font-weight: 300;
+}
+.valign-wrapper{
+  flex-wrap:wrap;
+}
