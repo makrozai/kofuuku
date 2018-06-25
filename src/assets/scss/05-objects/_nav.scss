@@ -11,6 +11,17 @@
         transition:all .3s;
       }
     }
+    &__desktop li.active{
+      background: transparent;
+      a{
+        background: transparent;
+        color: $secondary-color;
+        letter-spacing: 0;
+        &:after{
+          width: 100%;
+        }
+      }
+    }
     &__desktop a{
       position: relative;
       transition:all .3s;
@@ -25,7 +36,7 @@
         transform:translateX(-50%);
         transition:all .3s;
       }
-      &:hover{
+      &:hover,&.active{
         background: transparent;
         color: $secondary-color;
         letter-spacing: 0;

@@ -1,24 +1,43 @@
 <template>
-  <div id="app">
+  <div>
     <v-navbar :vnav="vNavbar"></v-navbar>
-    <v-banner></v-banner>
-    <v-form></v-form>
+    <div>
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
 import knavbar from './components/navbar.vue'
-import kbanner from './components/banner.vue'
-import kform from './components/formLog.vue'
 export default {
   components: {
     'v-navbar':knavbar,
-    'v-banner': kbanner,
-    'v-form':kform
   },
   data(){
     return{
       vNavbar:[
+        {
+          name: 'Grupos totales',
+          link: '/teams'
+        },
+        {
+          name: 'Agregar articulo',
+          link: '/addArticle'
+        },
+        {
+          name: 'Crear grupo',
+          link: '/addTeam'
+        },
+        {
+          name: 'Login',
+          link: '/login'
+        },
+        {
+          name: 'register',
+          link: '/register'
+        }
+      ],
+      vNavbarAdmin:[
         {
           name: 'Inicio',
           link: '#head'
@@ -36,6 +55,7 @@ export default {
           link: '#characteristics'
         }
       ]
+
     }
   }
 }
