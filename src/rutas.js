@@ -5,7 +5,7 @@ import addArticle from './components/addArticle.vue'
 import addTeam from './components/addTeam.vue'
 
 export const rutas =[
-  { path:'/login',component: login},
+  { path:'/login',component: login, name:'login'},
   { path:'/register',component: register},
   { path:'/teams',component: teams},
   { path:'/addArticle',component: addArticle},
